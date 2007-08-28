@@ -53,7 +53,6 @@ install -m644 %{SOURCE2} %{buildroot}%{_liconsdir}/%{name}.png
 mkdir -p %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
-Encoding=UTF-8
 Name=%{oname}
 Comment=%{Summary}
 Exec=%{_gamesbindir}/%{name}
