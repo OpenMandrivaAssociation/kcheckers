@@ -19,7 +19,6 @@ Patch3:		kcheckers-0.8.1-fix-target.patch
 Group:		Games/Boards
 License:	GPL
 URL:		http://wibix.de/viewpage.php?page_id=3
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Qt version of the classic boardgame "checkers".
