@@ -1,7 +1,7 @@
 %define	name	kcheckers
 %define	oname	Kcheckers
 %define	version	0.8.1
-%define	rel	2
+%define	rel	3
 %define	release	%mkrel	%{rel}
 %define	Summary	Kcheckers - Draughts game for KDE
 
@@ -17,7 +17,7 @@ Patch2:		kcheckers-0.8.1-no-doc.patch
 Patch3:		kcheckers-0.8.1-fix-target.patch
 Patch4:		kcheckers-0.8.1-fix-translations-path.patch
 Group:		Games/Boards
-License:	GPL
+License:	GPLv2+
 URL:		http://sourceforge.net/projects/qcheckers
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -33,9 +33,7 @@ This game is also known as "draughts".
 %patch4 -p1
 
 %build
-%{qt4dir}/bin/qmake INSTALL_ROOT=%{buildroot}
-#perl -pi -e "s#-O2#%{optflags}#g" Makefile
-
+%qmake_qt4
 %make
 
 %install
