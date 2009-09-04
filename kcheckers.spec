@@ -1,7 +1,7 @@
 %define	name	kcheckers
 %define	oname	Kcheckers
 %define	version	0.8.1
-%define	rel	3
+%define	rel	4
 %define	release	%mkrel	%{rel}
 %define	Summary	Kcheckers - Draughts game for KDE
 
