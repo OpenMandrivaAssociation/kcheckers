@@ -38,7 +38,7 @@ This game is also known as "draughts".
 
 %install
 rm -rf %{buildroot}
-%makeinstall INSTALL_ROOT=%{buildroot}
+make install INSTALL_ROOT=%{buildroot}
 
 #imenu and icons
 mkdir -p %{buildroot}{%{_menudir},%{_miconsdir},%{_iconsdir},%{_liconsdir}}
