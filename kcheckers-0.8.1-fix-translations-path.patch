@@ -1,0 +1,21 @@
+--- kcheckers-0.8.1.orig/main.cc	2008-04-22 09:58:51.000000000 +0200
++++ kcheckers-0.8.1/main.cc	2008-04-22 09:56:30.000000000 +0200
+@@ -20,7 +20,8 @@
+ 
+     // Qt translations
+     QTranslator qt_tr;
+-    if(qt_tr.load("qt_" + QLocale::system().name()))
++    if(qt_tr.load("qt_" + QLocale::system().name(),
++		PREFIX"/lib/qt4/translations"))
+ 	app.installTranslator(&qt_tr);
+     else
+ 	qDebug() << "Loading Qt translations failed.";
+@@ -28,7 +29,7 @@
+     // App translations
+     QTranslator app_tr;
+     if(app_tr.load("kcheckers_" + QLocale::system().name(),
+-		PREFIX"/share/kcheckers"))
++		PREFIX"/share/games/kcheckers"))
+ 	app.installTranslator(&app_tr);
+     else
+ 	qDebug() << "Loading KCheckers translations failed.";

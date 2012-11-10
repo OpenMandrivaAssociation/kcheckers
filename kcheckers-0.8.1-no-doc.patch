@@ -1,0 +1,10 @@
+--- orig/kcheckers-0.8.1/kcheckers.pro	2005-12-29 18:55:55.000000000 +0100
++++ kcheckers-0.8.1/kcheckers.pro	2006-11-22 19:08:16.000000000 +0100
+@@ -35,6 +35,6 @@
+ # This hack is needed for i18n support.
+ #
+ share.path	+= $$PREFIX/share/kcheckers
+-share.files	+= kcheckers.pdn COPYING AUTHORS ChangeLog README themes i18n/*
++share.files	+= kcheckers.pdn themes i18n/*
+ INSTALLS	+= share
+ 

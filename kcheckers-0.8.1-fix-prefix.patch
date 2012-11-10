@@ -1,0 +1,23 @@
+--- kcheckers-0.8.1/common.h.prefix	2005-12-29 18:53:16.000000000 +0100
++++ kcheckers-0.8.1/common.h	2010-02-18 12:28:43.000000000 +0100
+@@ -35,7 +35,7 @@
+ 
+ /* !!! Do not change PREFIX variable name, please. !!! */
+ /* !!! It is used in kcheckers.pro. !!! */
+-#define PREFIX		"/usr/local"
++#define PREFIX		"/usr"
+ #define USER_PATH	".kcheckers"		// in $HOME
+ #define THEME_DIR	"themes/"
+ 
+--- kcheckers-0.8.1/kcheckers.pro.prefix	2005-12-29 18:55:55.000000000 +0100
++++ kcheckers-0.8.1/kcheckers.pro	2010-02-18 12:28:43.000000000 +0100
+@@ -21,8 +21,7 @@
+ 
+ 
+ TARGET		= kcheckers
+-PREFIX		= $$system(grep 'define PREFIX' common.h | cut -d'"' -f2)
+-SHARE_PATH	= $$system(grep 'define SHARE_PATH' common.h | cut -d'"' -f2)
++PREFIX		= /usr
+ 
+ TRANSLATIONS	= i18n/kcheckers_de.ts i18n/kcheckers_fr.ts
+ #		i18n/kcheckers_ru.ts

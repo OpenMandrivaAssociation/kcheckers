@@ -1,0 +1,19 @@
+--- kcheckers-0.8.1/kcheckers.pro~	2007-06-26 13:10:36.000000000 +0800
++++ kcheckers-0.8.1/kcheckers.pro	2007-06-26 13:10:55.000000000 +0800
+@@ -26,14 +26,14 @@
+ TRANSLATIONS	= i18n/kcheckers_de.ts i18n/kcheckers_fr.ts
+ #		i18n/kcheckers_ru.ts
+ 
+-target.path	= $$PREFIX/bin
++target.path	= $$PREFIX/games
+ INSTALLS	+= target
+ 
+ 
+ #
+ # This hack is needed for i18n support.
+ #
+-share.path	+= $$PREFIX/share/kcheckers
++share.path	+= $$PREFIX/share/games/kcheckers
+ share.files	+= kcheckers.pdn themes i18n/*
+ INSTALLS	+= share
+ 
