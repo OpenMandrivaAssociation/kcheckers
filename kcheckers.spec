@@ -81,3 +81,66 @@ rm -rf %{buildroot}
 %{_miconsdir}/%{name}.png
 %{_iconsdir}/%{name}.png
 %{_liconsdir}/%{name}.png
+
+
+%changelog
+* Mon Dec 06 2010 Oden Eriksson <oeriksson@mandriva.com> 0.8.1-5mdv2011.0
++ Revision: 612526
+- the mass rebuild of 2010.1 packages
+
+* Thu Feb 18 2010 Funda Wang <fwang@mandriva.org> 0.8.1-4mdv2010.1
++ Revision: 507515
+- don't use makeinstall macro
+- rediff
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+
+* Sun Aug 10 2008 Funda Wang <fwang@mandriva.org> 0.8.1-3mdv2009.0
++ Revision: 270155
+- compile using new flags
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+* Tue Apr 22 2008 Guillaume Bedot <littletux@mandriva.org> 0.8.1-2mdv2009.0
++ Revision: 196448
+- fixed path to translations
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+    - kill desktop-file-validate's 'warning: key "Encoding" in group "Desktop Entry" is deprecated'
+
+* Tue Jun 26 2007 Funda Wang <fwang@mandriva.org> 0.8.1-1mdv2008.0
++ Revision: 44341
+- New version
+- Import kcheckers
+
+
+
+* Mon Aug 28 2006 Per Øyvind Karlsen <pkarlsen@mandriva.com> 0.6-4mdv2007.0
+- fix menu categoy
+
+* Mon Aug 28 2006 Per Øyvind Karlsen <pkarlsen@mandriva.com> 0.6-3mdv2007.0
+- fix summary macro used in menu
+- wipe out buildroot before installing
+- place binary in %%{_gamesbindir}, data in %%{_gamesdatadir}
+- compile with %%{optflags}
+- fix non-standard-gid
+- xdg menu
+- silent setup
+- cosmetics
+
+* Wed Nov 09 2005 Guillaume Bedot <littletux@mandriva.org> 0.6-2mdk
+- Fix menu entry
+
+* Mon Oct 17 2005 Guillaume Bedot <littletux@mandriva.org> 0.6-1mdk
+- Update to version 0.6
+- Added french translation
+- Changes from mcnl (Steffen Van Roosbroeck) : better description, menu-entry
+
+* Sun Dec 19 2004 Guillaume Bedot <guillaume.bedot@wanadoo.fr> 0.5-1mdk
+- First package for contribs.
