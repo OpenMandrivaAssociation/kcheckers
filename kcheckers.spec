@@ -18,7 +18,7 @@ Patch3:		kcheckers-0.8.1-fix-target.patch
 Patch4:		kcheckers-0.8.1-fix-translations-path.patch
 Group:		Games/Boards
 License:	GPLv2+
-URL:		http://sourceforge.net/projects/qcheckers
+URL:		https://sourceforge.net/projects/qcheckers
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
