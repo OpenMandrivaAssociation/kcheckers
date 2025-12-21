@@ -9,6 +9,7 @@ Summary:	%{Summary}
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
+BuildRequires:	make
 BuildRequires:	qt4-devel
 Source0:	http://downloads.sourceforge.net/qcheckers/%{name}-%{version}.tar.gz
 Source2:	%{name}-48x48.png
